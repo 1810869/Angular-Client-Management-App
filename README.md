@@ -14,7 +14,7 @@ A small Angular Client Manager built with Angular 21 and the public JSONPlacehol
 
 ## Requirements
 
-- Latest Node.js (https://nodejs.org/en/download) based on your operating system.
+- Node.js (https://nodejs.org/en/download) based on your operating system.
 - Github (https://desktop.github.com/download/) for Windows or (https://central.github.com/deployments/desktop/desktop/latest/darwin) for MacOS.
 - Code Editor (eg. VSCode, Neovim or EMacs)
   
@@ -56,3 +56,21 @@ ng serve --open
 - JSONPlaceholder is a read-only mock API. Edited client data and newly created posts are saved in the current browser session only.
 - The app is implemented with standalone components and Angular signals for a lightweight architecture.
 - The application includes a simple responsive layout, reusable page components, and a session-based cache for local updates.
+
+## Assumptions Made
+
+- Since JSONPlaceholder is a mock API and does not persist changes, edited client information and newly added posts are stored locally in memory/session during the browser session.
+- Only basic client information fields were made editable as required by the assessment.
+- Search functionality was implemented on the client side because the dataset is relatively small.
+- Authentication and authorization were considered out of scope for this exercise.
+
+## Possible Improvements
+
+- Adding unit and integration tests for components and services
+- Implementing state management using NgRx or Signals for better scalability
+- Enhancing responsive design and accessibility
+- Adding pagination and sorting for client lists
+- Improving UI/UX with better loading skeletons and animations
+- Adding stronger type safety and API error handling coverage
+
+This project was developed with a focus on clean structure, maintainability, and user experience.
